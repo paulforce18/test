@@ -1,0 +1,77 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: system-ui, system-ui, sans-serif;
+}
+.root{
+    width: 10000px;
+}
+.name, .banner, .root{
+    width: 60%;
+    margin: auto;
+}
+.name, .banner{
+    min-width: 800px;
+    text-align: center;
+}
+.name > hr {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.banner{
+    background: url('https://res.cloudinary.com/springboard-images/image/upload/w_1080,c_limit,q_auto,f_auto,fl_lossy/wordpress/2014/02/Selection_110.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-bottom: 110px;
+    height: 40vh;
+    max-height: 500px;
+    background-color: aqua;
+}
+.profilePic{
+    background: url('https://avatars.githubusercontent.com/u/39962832?v=4');
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    bottom: -45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+ul{
+    font-size: 18px;
+}
+.banner > ul{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    display: flex;
+}
+li{
+    margin-bottom: 10px;
+    margin-right: 50px;
+    list-style: none;
+}
+.commands{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(140px, 100%));
+}
+.commands > li:nth-child(even){
+    color: grey;
+}
+.title{
+    color: #1f73f1;
+}
+.sec{
+    margin-top: 20px;
+}
+button{
+    font-size: 21px;
+    background-color: transparent;
+    outline: transparent;
+    border: unset;
+    color: white;
+    cursor: pointer;
+}
